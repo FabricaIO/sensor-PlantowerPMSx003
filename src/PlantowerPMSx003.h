@@ -28,8 +28,8 @@ class PlantowerPMSx003 : public Sensor {
 		PlantowerPMSx003(int RX_Pin, int TX_Pin);
 		bool begin();
 		bool takeMeasurement();
-	private:
 
+	protected:
 		/// @brief Pointer to HardwareSerial port, if using
 		HardwareSerial* hardwareSerialPort;
 
