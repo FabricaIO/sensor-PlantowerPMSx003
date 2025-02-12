@@ -19,7 +19,6 @@ PlantowerPMSx003::PlantowerPMSx003(int RX_Pin, int TX_Pin) : pms(PMSx003), softw
 }
 
 bool PlantowerPMSx003::begin() {
-	Description.id = 8;
 	Description.parameterQuantity = 3;
 	Description.name = "Plantower PMS";
 	Description.type = "air quality";
