@@ -1,4 +1,4 @@
-#include "PlantowerPMSx003.h";
+#include "PlantowerPMSx003.h"
 
 /// @brief Creates a Plantower PMS object using hardware serial
 /// @param SerialPort Pointer to the serial port to use
