@@ -25,7 +25,7 @@
 	"frameworks": "arduino",
 	"platforms": "*",
 	"fabrica-io" : {
-		"name": "pmsx003",
+		"name": "PMSX003AirQuality",
 		"type": 0,
 		"category": "air quality",
 		"libname": "PlantowerPMSx003",
@@ -36,7 +36,7 @@
 			[
 				{
 					"name": "SerialPort",
-					"type": "HardwareSerial**",
+					"type": "HardwareSerial*",
 					"description": "The serial port to use",
 					"default": ""
 				},
