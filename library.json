@@ -1,5 +1,5 @@
 {
-	"name": "Fabrica-IO Sensor Plantower PMSx003",
+	"name": "sensor-PlantowerPMSx003",
 	"version": "0.5.0",
 	"description": "Plantower PMSx003 PM2.5 sensor",
 	"keywords": "Fabrica-IO, sensor, uart",
