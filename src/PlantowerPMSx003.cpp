@@ -1,19 +1,21 @@
 #include "PlantowerPMSx003.h"
 
 /// @brief Creates a Plantower PMS object using hardware serial
+/// @param Name The device name
 /// @param SerialPort Pointer to the serial port to use
 /// @param RX_Pin The RX pin to use
 /// @param TX_Pin The TX pin to use
-PlantowerPMSx003::PlantowerPMSx003(HardwareSerial* SerialPort, int RX_Pin, int TX_Pin) : pms(PMSx003, *SerialPort) {
+PlantowerPMSx003::PlantowerPMSx003(String Name, HardwareSerial* SerialPort, int RX_Pin, int TX_Pin) : pms(PMSx003, *SerialPort), Sensor(Name) {
 	rxpin = RX_Pin;
 	txpin = TX_Pin;
 	hardwareSerialPort = SerialPort;
 }
 
 /// @brief Creates a Plantower PMS object using software serial
+/// @param Name The device name
 /// @param RX_Pin The RX pin to use
 /// @param TX_Pin The TX pin to use
-PlantowerPMSx003::PlantowerPMSx003(int RX_Pin, int TX_Pin) : pms(PMSx003), softwareSerialPort(RX_Pin, TX_Pin) {
+PlantowerPMSx003::PlantowerPMSx003(String Name, int RX_Pin, int TX_Pin) : pms(PMSx003), softwareSerialPort(RX_Pin, TX_Pin), Sensor(Name) {
 	pms.setSerialPort(&softwareSerialPort);
 	use_soft_serial = true;
 }

@@ -24,8 +24,8 @@
 /// @brief Contoller for PMSx003 air quality sensors
 class PlantowerPMSx003 : public Sensor {
 	public:
-		PlantowerPMSx003(HardwareSerial* SerialPort, int RX_Pin = 16, int TX_Pin = 17);
-		PlantowerPMSx003(int RX_Pin, int TX_Pin);
+		PlantowerPMSx003(String Name, HardwareSerial* SerialPort, int RX_Pin = 16, int TX_Pin = 17);
+		PlantowerPMSx003(String Name, int RX_Pin, int TX_Pin);
 		bool begin();
 		bool takeMeasurement();
 
