@@ -27,10 +27,6 @@ bool PlantowerPMSx003::begin() {
 	Description.parameters = {"PM1", "PM2.5", "PM10"};
 	Description.units = {"ug/m3", "ug/m3", "ug/m3"};
 	Description.version = "0.5";
-	// Call default setup
-	if (!Sensor::begin()) {
-		return false;
-	}
 	values.resize(Description.parameterQuantity);
 	if (use_soft_serial) {
 		softwareSerialPort.begin(9600);
