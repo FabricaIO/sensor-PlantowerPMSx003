@@ -24,7 +24,7 @@
 	"homepage": "https://github.com/FabricaIO",
 	"frameworks": "arduino",
 	"platforms": "*",
-	"fabrica-io" : {
+	"fabricaio" : {
 		"name": "PMSX003AirQuality",
 		"type": 0,
 		"category": "air quality",
